@@ -1,22 +1,12 @@
 {
-    "name": "Robot Doggy Scratch GUI",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "dbaeumer.vscode-eslint",
-          "esbenp.prettier-vscode"
-        ]
-      }
-    },
-    "postCreateCommand": "bash .devcontainer/setup.sh",
-    "forwardPorts": [8601],
-    "portsAttributes": {
-      "8601": {
-        "label": "Scratch GUI",
-        "onAutoForward": "openBrowser"
-      }
-    },
-    "remoteUser": "vscode"
+  "name": "Robot Doggy Web",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+    }
   }
-  
+}
